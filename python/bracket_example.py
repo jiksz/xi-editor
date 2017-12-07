@@ -18,9 +18,8 @@ from xi_plugin import start_plugin, Plugin, edit
 
 MATCHES = {"{": "}", "[": "]", "(": ")"}
 
-
 class BracketCloser(Plugin):
-    """Naively closes opened brackets, parens, & braces."""
+    ""Naively closes opened brackets, parens, & braces.""
 
     def update(self, view, author, rev, start, end,
                new_len, edit_type, text=None):
